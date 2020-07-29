@@ -1,0 +1,99 @@
+[
+  {
+    "id": "1",
+    "name": "John",
+    "age": 36,
+    "gender": "male",
+    "addresses": [
+      {
+        "alias": "Office",
+        "address": "123, Street-50, New Delhi",
+        "pincode": "122001"
+      },
+      {
+        "alias": "Home",
+        "address": "143, Street-90, New Delhi",
+        "pincode": "122011"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Kate",
+    "age": 16,
+    "gender": "female",
+    "addresses": [
+      {
+        "alias": "Home",
+        "address": "B-900, Street-40, New Delhi",
+        "pincode": "122121"
+      },
+      {
+        "alias": "Other",
+        "address": "22, Street-19, New Delhi",
+        "pincode": "122010"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "James",
+    "age": 50,
+    "gender": "male",
+    "addresses": [
+      {
+        "alias": "Office",
+        "address": "234, Street-14, New Delhi",
+        "pincode": "110011"
+      },
+      {
+        "alias": "Home",
+        "address": "123, Street-11, New Delhi",
+        "pincode": "122001"
+      },
+      {
+        "alias": "Other",
+        "address": "546, Street-114, New Delhi",
+        "pincode": "122091"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Eva",
+    "age": 19,
+    "gender": "female",
+    "addresses": []
+  },
+  {
+    "id": "5",
+    "name": "Tom",
+    "age": 26,
+    "gender": "male",
+    "addresses": [
+      {
+        "alias": "Office",
+        "address": "12, Street-15, New Delhi",
+        "pincode": "122001"
+      },
+      {
+        "alias": "Home",
+        "address": "45, Street-3, New Delhi",
+        "pincode": "122011"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Lia",
+    "age": 29,
+    "gender": "female",
+    "addresses": [
+      {
+        "alias": "Home",
+        "address": "22, Street-22, New Delhi",
+        "pincode": "122011"
+      }
+    ]
+  }
+]
