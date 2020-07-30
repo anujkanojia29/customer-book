@@ -1,4 +1,5 @@
 const express = require('express');
+var cors = require('cors')
 
 const { CUSTOMERS_PATH } = require('./app/helpers/constants');
 
@@ -8,6 +9,9 @@ const errorHandler = require('./app/middleware/errorHandler');
 
 //Create Express App
 const app = express();
+
+//Setting CORS with default cinfiguration
+app.use(cors());
 
 //body parser
 app.use(express.json());
