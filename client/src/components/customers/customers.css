@@ -1,0 +1,47 @@
+.customers-layout {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 150px);
+    overflow: auto;
+    width: 360px;
+    padding: 5px 25px;
+}
+
+.customer-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    min-height: 160px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 2%;
+    border: 1px var(--light-color) solid;
+    box-shadow: 5px 5px 5px var(--light-color) ;
+}
+
+.customer-avatar {
+    font-size: 40px;
+}
+
+.customer-name {
+    font-size: 14px;
+    width: 160px;
+    text-overflow: ellipsis;
+}
+
+.customer-info {
+    font-size: 12px;
+}
+
+@media(max-width:1020px) {
+    .customers-layout {
+        flex-direction: row;
+        width: calc(100vw - 60px);
+        overflow: auto;
+        height: 200px;
+        padding: 5px 25px;
+    }
+}

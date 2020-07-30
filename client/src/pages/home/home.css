@@ -1,0 +1,10 @@
+.home-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:1020px) {
+    .home-page {
+        flex-direction: column;
+    }
+}
