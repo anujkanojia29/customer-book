@@ -1,10 +1,11 @@
-# ASSIGNMET API
-
-> Backend API for User Activation Management
+# Project 
+Backend API for Customer Book 
 
 ## Usage
 
-Add valid MONGO_URI in "config/config.env"
+Add PORT in "config/config.env" to run server on desired port
+
+Update customers.json with the customer address data/
 
 ## Install Dependencies
 
@@ -24,75 +25,13 @@ npm start
 
 ## API
 
-Login 
-```
-/api/v1/auth/login
-
-// body { username, password }
-
-// Response : JWT Token (when succeeded)
-// Response Cookie: JWT token
-```
-Logout
-```
-/api/v1/auth/logout
-
-// Response Cookie: {}
-```
-
-User Management 
-
-Once logged in either use JWT token with request cookie or send it as Bearer token in authorization header 
-
-
-To get the details of the logged in user
+To get customers data 
 
 ```
-/api/v1/user/details
-
-// Response : User Details (without password)
+/api/v1/customers
 ```
-
-To upload list users along with their details
-```
-/api/v1/user/uploadUsers
-
-// Body: Array of user objects
-
-// Response: Download link of the data containing status of users uploaded
-```
-
-To list down all the downlinks of the uploads made by logged in user
-```
-/api/v1/user/uploads
-
-// Response: List of Download links
-```
-
-To download data containing status of users uploaded
-```
-/api/v1/user/download/:id
-
-// Response: data.json
-```
-
-## Docker
-
-To build docker image 
-```
-docker build -t assignment-image .
-```
-
-To run docker build
+To get customer addresses 
 
 ```
-docker run --publish 8000:5000 --detach --name bb assignment-image:latest
+/api/v1/customers/:id/address
 ```
-
-## Demo
-
-Without Docker
-http://localhost:5000
-
-With Docker 
-http://localhost:8000
